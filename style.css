@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+nav{
+  background: azure;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+  backdrop-filter: blur(20px);
+}
+
+.hero {
+  background-color: #3b5d50;
+  min-height: 50vh;
+}
+
+/* Product Cards */
+.plus-icon {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: rgba(255, 255, 0, 0.788);
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  font-size: 18px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.card:hover .plus-icon {
+  opacity: 1;
+}
+
+/* Why Choose Us */
+.why-us {
+  background-color: #f8f9fa;
+}
+/* Dotted Background */
+.dotted-bg {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 150px;
+  height: 150px;
+  background-image: radial-gradient(#ffc107 1px, transparent 1px);
+  background-size: 12px 12px;
+  z-index: 0;
+}
+.dotted_bg{
+    position: absolute;
+    top: 55px;
+    right: 35px;
+    width: 350px;
+    height: 350px;
+    background-image: radial-gradient(#f4f2ec 1px, transparent 3px);
+    background-size: 10px 10px;
+    z-index: 0;
+}
+.why-us-content {
+  position: relative;
+  z-index: 1;
+}
+/* Buttons */
+.btn-warning, .btn-outline-light, .btn-dark, .btn-primary {
+  border-radius: 30px;
+}
+/* Image Thumbnail */
+.image-thumbnail{
+   background:#3b5d50;
+   border-radius: 15px;
+   float: inline-start;
+   height: 250px;
+   width: 100%;
+  object-fit: cover;
+}
+.image-thumbnail:hover{
+   transform: scale(1.05);
+   transition: 0.5s;
+   z-index: 1;
+   filter: brightness(0.8);
+   transform: translateY(-5px);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   background: rgb(0, 106, 255);
+}
